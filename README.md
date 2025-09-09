@@ -45,44 +45,6 @@ Multiple users can create, edit, and chat on notes simultaneously – think of i
 
 ---
 
-collabnotes/
-├── pyproject.toml          # uv project config
-├── app.py                  # Flask entry point
-├── config.yaml             # App settings
-│
-├── collabnotes/            # Main package
-│   ├── __init__.py
-│   ├── models/             # OOP classes
-│   │   ├── user.py
-│   │   ├── note.py
-│   │   ├── chat.py
-│   │
-│   ├── services/           # Business logic
-│   │   ├── note_manager.py
-│   │   ├── auth_service.py
-│   │   ├── export_service.py
-│   │
-│   ├── routes/             # Flask routes
-│   │   ├── api.py
-│   │   ├── web.py
-│   │   ├── sockets.py
-│   │
-│   ├── utils/              # Helpers
-│   │   ├── file_utils.py
-│   │   ├── logger.py
-│   │
-│   └── templates/          # HTML templates
-│       ├── base.html
-│       ├── notes.html
-│       ├── chat.html
-│
-├── tests/                  # Tests
-│   ├── test_api.py
-│   ├── test_sockets.py
-│   ├── test_notes.py
-│
-└── static/                 # CSS, JS
-
 
 # Create a new environment
 uv venv
@@ -115,6 +77,4 @@ Run the Flask server
 
 uv run app.py
 
-
-## 📂 Project Structure  
 
